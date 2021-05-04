@@ -28,7 +28,7 @@ def load_float(filepath):
        tuple (width, height, channels, pixels), where width and height - are size of the loaded image, channels - the number of components per pixel (3 for RGB and 4 for RGBA), pixels - plane array of floats
        Pixels list contains channels data for the first pixel, then for the second one and so on...
     '''
-    return pystbi.load(filepath)
+    return pystbi.load_float(filepath)
 
 
 def write(filepath, width, height, components, pixels, jpg_quality=100):
