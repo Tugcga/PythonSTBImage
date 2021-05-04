@@ -19,6 +19,8 @@ stbi.load_float(filepath)
 
 These functions load image by it full path and return the tuple (width, height, channels, pixels). Pixels are plane list of integers or floats (for `load_float` function), which contains data for each pixel of the image. At first it contains several values for the first pixel, then for the second one and so on...
 
+When an image is loaded in float mode (by using `load_float` function), then pixels values returned without gamma compensation. For example, if the pixel in LDR mode has values `[128, 128, 128]` then in HDR mode it has values `[0.22, 0.22, 0.22]`.
+
 ```python
 stbi.write(filepath, width, height, components, pixels)
 stbi.write_float(filepath, width, height, components, pixels)
