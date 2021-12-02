@@ -10,7 +10,7 @@ Import module
 import stbi
 ```
 
-The module contains 4 functions:
+The module contains 4 functions: two function for loading images and two ones for writing it.
 
 ```python
 stbi.load(filepath)
