@@ -1,9 +1,15 @@
 import sys
 if sys.version_info[0] == 2:
-    import PyStbImage_py2 as pystbi
+    import PyStbImage_py27 as pystbi
 else:
-    from . import PyStbImage_py3 as pystbi
-
+    if sys.version_info[1] == 6:
+        from . import PyStbImage_py36 as pystbi
+    elif sys.version_info[1] == 7:
+        from . import PyStbImage_py37 as pystbi
+    elif sys.version_info[1] == 8:
+        from . import PyStbImage_py38 as pystbi
+    else:
+        from . import PyStbImage_py39 as pystbi
 
 def load(filepath):
     '''Load image from the file. Supports png, jpg, tga, bmp and hdr formats
