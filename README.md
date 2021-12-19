@@ -4,12 +4,6 @@ This is Python Windows bindings for stb_image and stb_image_write c++ libraries 
 
 # How to use
 
-Install by
-
-```
-pip install stbimage
-```
-
 Import module
 
 ```python
