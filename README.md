@@ -1,13 +1,19 @@
 # What is it
 
-This is Python Windows bindings for stb_image and stb_image_write c++ libraries ([link](https://github.com/nothings/stb)). These libraries used for reading and writing images in png, jpg, bmp, tga and hdr formats. Created by using [PyBind11](https://github.com/pybind/pybind11). Works in Python 2.7 and 3.x, but use different binary modules for different versions of the Pyhon.
+This is Python Windows bindings for stb_image and stb_image_write c++ libraries ([link](https://github.com/nothings/stb)). These libraries used for reading and writing images in png, jpg, bmp, tga and hdr formats. Created by using [PyBind11](https://github.com/pybind/pybind11). Works in Python 2.7 and 3.6-3.9, but use different binary modules for different versions of the Python.
 
 # How to use
+
+Install by
+
+```
+pip install stbimage
+```
 
 Import module
 
 ```python
-import stbi
+import stbimage as stbi
 ```
 
 The module contains 4 functions: two function for loading images and two ones for writing it.
